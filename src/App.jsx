@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from './components/NavBar'
-import UserList from './components/UserList'
+import NavBar from './components/Navbar/NavBar'
+import UserList from './components/UserList/UserList'
 import './App.css'
-import Pagination from './components/Pagination';
+import Pagination from './components/Pagination/Pagination';
 
 function App() {
   let [UserData , setUserData] = useState({});
@@ -30,7 +30,9 @@ function App() {
       <NavBar OnClick={onClickHandler} ></NavBar>
       {
         isLoading
-        ? "Loading"
+        ? <div className='loadingText'>
+            <p>Loading Please Wait</p>
+          </div>
         : <React.Fragment>
             <UserList Users={UserData.data} ></UserList>
             <Pagination currentPage={UserData.page} totalPage={UserData.total_pages} next={() => setPageNumber(pageNumber+1)} previous={() => setPageNumber(pageNumber-1)}></Pagination>

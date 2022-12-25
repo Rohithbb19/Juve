@@ -1,0 +1,44 @@
+.mainCard{
+    width: 420px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right,#7827E7, #A94FF5) ;
+    
+}
+
+.cardImg{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.cardInfo{
+    color: aliceblue;
+    margin-left: 40px;
+}
+
+.cardName{
+    font-weight: 300;
+}
+
+.cardEmail{
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width:650px){
+    .cardInfo{
+        transition: 300ms;
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (min-width:650px){
+    .cardInfo{
+        transition: 300ms;
+    }
+}

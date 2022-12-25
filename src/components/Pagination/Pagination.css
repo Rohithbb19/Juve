@@ -1,0 +1,31 @@
+.pagination{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pageButton{
+    text-decoration: none;
+    width: 75px;
+    height: 35px;
+    border-color: #7827E7;
+    color: white;
+    border-width: 2px;
+    background-color: #7827E7;
+    font-family: Tahoma, sans-serif;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.pageButton:hover{
+    background-color: white;
+    color: black;
+    transition: 300ms;
+}
+
+.currentPage{
+    font-size: medium;
+       
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import './NavBar.css'
-import logo from '../../assets/Juve.png'
+import logo from '../../../public/Juve.png'
 
 function NavBar(props){
 

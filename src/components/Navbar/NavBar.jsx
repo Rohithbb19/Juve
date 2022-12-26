@@ -1,11 +1,13 @@
 import React from "react";
 import './NavBar.css'
+import logo from '../../assets/Juve.png'
+
 function NavBar(props){
 
     return(
         <nav className="navBar">
             <div className="navName">
-            <img className="navImg" src="src\assets\Juve.png"/>    
+            <img className="navImg" src={logo}/>    
             <h3 >uve</h3>
             </div>
             <div className="mainBorder">
